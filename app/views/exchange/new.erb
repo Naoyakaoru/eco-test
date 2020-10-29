@@ -1,0 +1,12 @@
+<% form_for(@exchange) do |form| %>
+  <%= form.label :company_name %>
+  <%= form.text_field :company_name, autofocus: true %>
+
+  <%= form.label :tax_id %>
+  <%= form.number_field :tax_id %>
+
+  <%= form.label :tel %>
+  <%= form.text_field :tel %>
+
+  <%= form.submit :submit %>
+<% end %>
